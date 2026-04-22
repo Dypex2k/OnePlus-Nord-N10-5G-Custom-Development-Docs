@@ -7,27 +7,17 @@ Arquitectura: ARM64
 SO Base: Android 10 / 11
 
 INSTALACION DE TWRP
-
-    Desbloquear Bootloader (Obligatorio).
-
-    Entrar a modo Fastboot: adb reboot bootloader
-
-    Boot temporal: fastboot boot twrp_file.img
-
-    Nota: Si el touch no funciona, usar mouse por OTG o comandos ADB.
+Desbloquear Bootloader (Obligatorio).
+Entrar a modo Fastboot: adb reboot bootloader
+Boot temporal: fastboot boot twrp_file.img
+Nota: Si el touch no funciona, usar mouse por OTG o comandos ADB.
 
 BOOT.IMG MODIFICADO (ROOT Y NETHUNTER)
-
-    Extraer boot.img original de la ROM.
-
-    Parchear con Magisk App para obtener Root.
-
-    Para NetHunter: Habilitar en el kernel soporte HID y Drivers Wi-Fi externos.
-
-    Flash: fastboot flash boot magisk_patched.img
+Extraer boot.img original de la ROM.
+Parchear con Magisk App para obtener Root.
+Para NetHunter: Habilitar en el kernel soporte HID y Drivers Wi-Fi externos.
+Flash: fastboot flash boot magisk_patched.img
 
 SOLUCION DE ERRORES COMUNES
-
-    Error I/O o Read-only: Android 10 bloquea /system. Usar 'mount -o remount,rw /' en TWRP.
-
-    Bootanimation: Si no cambia en /system/media, buscar en /product/media.
+Error I/O o Read-only: Android 10 bloquea /system. Usar 'mount -o remount,rw /' en TWRP.
+Bootanimation: Si no cambia en /system/media, buscar en /product/media.
